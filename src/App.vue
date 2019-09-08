@@ -28,4 +28,5 @@ export default {
 <style lang="stylus" scoped>
   div
     color red
+    transform translate(50%)
 </style>

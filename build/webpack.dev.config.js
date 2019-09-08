@@ -18,7 +18,7 @@ module.exports = merge(webpackBaseConfig, {
   module: {
     rules: [
       {
-        test: /\.styl(us)?$/,
+        test: /\.(css|styl(us))?$/,
         use: [
           {
             loader: 'vue-style-loader',
@@ -30,11 +30,11 @@ module.exports = merge(webpackBaseConfig, {
             }
           },
           {
+            loader: 'postcss-loader'
+          },
+          {
             loader: 'stylus-loader'
           }
-          // {
-          //   loader: 'postcss-loader'
-          // }
         ]
       }
     ]
