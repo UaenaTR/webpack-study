@@ -8,7 +8,7 @@ const webpackBaseConfig = {
   context: path.resolve(__dirname),
   output: {
     path: path.resolve(__dirname, "../dist"),
-    filename: "bundle.[hash:8].js",
+    filename: "js/[name].[hash:8].js",
     publicPath: "",
   },
   //模块
